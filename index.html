@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Gustavo Camargo</title>
     <link rel="stylesheet" href="style/style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Audiowide&family=Doto:wght@100..900&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Audiowide&family=Doto:wght@100..900&family=Fredoka:wght@300..700&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <div class="container">
-        <section class="header_logo">
-            <a href="#">
-                <img src="imagens/logoHeader.png">
-            </a>
-        </section>
+            <section class="header_logo">
+                <a href="#">
+                    <img src="imagens/logoHeader.png" alt="Logo do Gustavo Camargo">
+                </a>
+            </section>
         </div>
         <section class="opcoes_header">
             <nav>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Contatos</a></li>
-                    <li><a href="#">Linguagens</a></li>
-                    <li><a href="#">Sobre mim</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre_mim">Sobre mim</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
                 </ul>
             </nav>
         </section>
@@ -33,10 +37,79 @@
         </section>
     </header>
     <main>
-        
+        <section class="apresentacao_container" id="inicio">
+            <h1>Olá, me chamo <strong>Gustavo Camargo</strong>! Bem-vindo ao meu portfólio.</h1>
+        </section>
+        <section class="sobremim_container" id="sobre_mim">
+            <div class="img_sobremim">
+                <img src="imagens/sobreMim.png" alt="Foto do Gustavo Camargo">
+            </div>
+            <article>
+                <h2>
+                    Sobre mim
+                </h2>
+                <p>
+                    Sou um desenvolvedor full stack e estou buscando crescer meu conhecimento em Javascript.
+                </p>
+                <p>
+                    Atualmente estou cursando Ciência da Computação na faculdade Uniritter - 4º Semestre.
+                </p>
+                <p>
+                    Minha maior motivação é desenvolver soluções acessíveis para facilitar a vida das pessoas.
+                </p>
+            </article>
+        </section>
+        <section class="tecnologias_container" id="tecnologias">
+            <h2>
+                Tecnologias
+            </h2>
+            <ul>
+                <li><img src="imagens/html.png">HTML</li>
+                <li><img src="imagens/css.png">CSS</li>
+                <li><img src="imagens/javascript.png">Javascript</li>
+                <li><img src="imagens/node.png">Node.Js</li>
+                <li><img src="imagens/vue.png">Vue.Js</li>
+            </ul>
+        </section>
+
+        <section class="contatos_container" id="contatos">
+            <div>
+            <h2>
+                Contatos
+            </h2>
+            </div>
+            <div class="contato_lista">
+                <h3>
+                    Whatsapp:
+                </h3>
+                <a href="https://wa.me/5551995424238" target="_blank">
+                    <img src="imagens/whatsapp.png" alt="Ícone do Whatsapp">
+                </a>
+                <h3>
+                    Instagram:
+                </h3>
+                <a href="https://www.instagram.com/gustacamargooo/" target="_blank">
+                    <img src="imagens/instagram.png" alt="Ícone do Instagram">
+                </a>
+                <h3>
+                    LinkedIn:
+                </h3>
+                <a href="" target="_blank">
+                    <img src="imagens/linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+                <h3>
+                    E-mail:
+                </h3>
+                <a href="mailto:gu_camargo06@hotmail.com" taget="_blank">
+                    <img src="imagens/email.png" alt="Ícone do e-mail" target="_blank">
+                </a>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
+
 </body>
+
 </html>

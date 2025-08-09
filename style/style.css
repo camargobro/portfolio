@@ -1,46 +1,55 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: "Arvo", serif;
 }
 
-body{
+body {
     background-color: #040403;
     height: 100vh;
 }
 
-header{
+h2 {
+    color: #FE9920;
+    padding: 0 40px;
+    margin: 10px;
+}
+
+header {
     padding: 40px 4%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header_logo{
+.header_logo {
     max-width: 1000px;
     margin: 0 auto;
 }
-.header_logo a img{
+
+.header_logo a img {
     max-width: 100px;
 }
 
-.opcoes_header nav ul{
+.opcoes_header nav ul {
     display: flex;
     gap: 50px;
 }
-.opcoes_header nav ul li a{
-    color:#EBF5DF;
+
+.opcoes_header nav ul li a {
+    color: #EBF5DF;
     text-decoration: none;
     transition: 0.5s;
     display: inline-block;
 }
-.opcoes_header nav ul li a:hover{
+
+.opcoes_header nav ul li a:hover {
     color: #FE9920;
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
 
-.button_projetos button{
+.button_projetos button {
     background-color: #FE9920;
     padding: 10px 30px;
     border: none;
@@ -48,7 +57,190 @@ header{
     transition: 0.5s;
     cursor: pointer;
 }
-.button_projetos button:hover{
+
+.button_projetos button:hover {
     background-color: #EBF5DF;
-    transform:scale(1.1);
+    transform: scale(1.1);
+}
+
+.apresentacao_container {
+    color: #EBF5DF;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25%;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.apresentacao_container strong {
+    color: #FE9920;
+    animation: rainbow 3s infinite linear;
+}
+
+@keyframes rainbow {
+    0% {
+        color: #FE9920;
+    }
+
+    30% {
+        color: #FE9920;
+    }
+
+    50% {
+        color: yellow;
+    }
+
+    80% {
+        color: rgb(255, 17, 0);
+    }
+
+    100% {
+        color: #FE9920
+    }
+}
+
+.sobremim_container {
+    justify-content: center;
+    color: #EBF5DF;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    animation: fadeIn 5s;
+}
+
+.sobremim_container img {
+    transition: 0.5s;
+}
+
+.sobremim_container img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.sobremim_container article p {
+    margin: 5%
+}
+
+.sobremim_container article p strong {
+    color: #FE9920;
+}
+
+.tecnologias_container {
+    transition: 0.3s;
+    margin-top: 20%;
+}
+
+.tecnologias_container h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.tecnologias_container ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tecnologias_container ul li {
+    margin: 30px;
+    padding: 15px;
+    width: 10%;
+    min-width: 180px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #040403;
+    list-style-type: none;
+    border-radius: 15px;
+    color: #EBF5DF;
+    animation: pulse 4s infinite;
+    transition: 0.5s;
+    user-select: none;
+    border: 1px solid #FE9920;
+    
+}
+
+.tecnologias_container ul li:hover {
+    background-color: #FE9920;
+}
+
+.tecnologias_container ul li img {
+    width: 50px;
+    height: auto;
+
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.contatos_container h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.contatos_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+    margin: 100px;
+    margin-top: 20%;
+    padding: 100px;
+    color: #EBF5DF;
+}
+
+.contatos_container a {
+    width: 50px;
+    text-decoration: none;
+    color: #EBF5DF;
+}
+
+.contatos_container a img {
+    width: 50px;
+}
+
+.contato_lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contato_lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.contato_lista img{
+    transition: 0.5s;
+}
+.contato_lista img:hover{
+    transform: scale(1.1);
 }
