@@ -3,13 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Arvo", serif;
-
 }
 
 body {
     background-color: #040403;
     height: 100vh;
-
 }
 
 h2 {
@@ -27,7 +25,6 @@ header {
 
 header section {
     background-color: #040403;
-
 }
 
 section:not(header section) {
@@ -59,7 +56,6 @@ section:not(header section) {
     text-decoration: none;
     transition: 0.5s;
     display: inline-block;
-
 }
 
 .opcoes_header nav ul li a:hover {
@@ -69,7 +65,7 @@ section:not(header section) {
 
 .button_projetos button {
     background-color: #FE9920;
-    padding: 10px 30px;
+    padding: 10px 40px;
     border: none;
     border-radius: 20px;
     transition: 0.5s;
@@ -99,19 +95,15 @@ section:not(header section) {
     0% {
         color: #FE9920;
     }
-
     30% {
         color: #FE9920;
     }
-
     50% {
         color: yellow;
     }
-
     80% {
         color: rgb(255, 17, 0);
     }
-
     100% {
         color: #FE9920
     }
@@ -138,15 +130,13 @@ section:not(header section) {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
 }
 
-
 .sobremim_container article p {
-    margin: 5%
+    margin: 5%;
 }
 
 .sobremim_container article p strong {
@@ -186,7 +176,6 @@ section:not(header section) {
     transition: 0.5s;
     user-select: none;
     border: 1px solid #FE9920;
-
 }
 
 .tecnologias_container ul li:hover {
@@ -196,19 +185,15 @@ section:not(header section) {
 .tecnologias_container ul li img {
     width: 50px;
     height: auto;
-
-
 }
 
 @keyframes pulse {
     0% {
         transform: scale(1);
     }
-
     50% {
         transform: scale(1.1);
     }
-
     100% {
         transform: scale(1);
     }
@@ -251,55 +236,77 @@ section:not(header section) {
     transition: 0.5s;
 }
 
+
 .contato_lista img:hover {
     transform: scale(1.1);
 }
 
 .projetos_container {
     margin-top: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    text-align: center;
+    padding: 0 40px;
+}
+.projetos_title{
+    margin: 2%;
 }
 
 .projetos_lista {
     display: flex;
-    gap: 10%;
-}
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 60px auto;
 
-
-.projetos_container div a {
-    text-decoration: none;
-}
-
-.projetos_container div a img {
-    width: 200px;
-    border-radius: 10px;
-    margin: 0 auto;
 }
 
 .projeto {
-    transition: 1s;
+    flex: 1 1 300px;
+    max-width: 350px;
+    background-color: rgba(14, 14, 14, 0.164);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
     box-shadow: 0 0 5px #fe9a20a4;
-    padding: 5%;
+    transition: background-color 0.3s ease, transform 0.3s ease
 }
 
 .projeto:hover {
-    background-color: rgba(56, 56, 56, 0.308);
+    background-color: rgba(56, 56, 56, 0.5);
+    transform: translateY(-5px);
+}
+
+.projeto a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .projetos_container h3 {
     color: #FE9920;
-    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
-.projetos_container p {
-    color: #EBF5DF;
-    font-size: 13px;
+.projeto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px auto;
 }
+
+.projeto p {
+    color: #EBF5DF;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
 
 footer {
     padding: 40px 20px;
@@ -342,16 +349,14 @@ footer a:hover {
         padding: 10px 15px;
     }
 
-    .projetos_container div a img {
-        max-width: 150px;
-        width: 100%;
-        margin: 0 auto;
-        display: block;
-        height: auto;
+    .projetos_lista {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
     }
-
-    .projetos_container p {
-        font-size: 12px;
+    .projeto {
+        flex: 1 1 45%;
+        max-width: none;
     }
 
     header {
@@ -384,13 +389,15 @@ footer a:hover {
         margin: 10px 0;
     }
 
-    .projetos_container {
-        flex-direction: column;
-        gap: 15px;
+    .projetos_lista {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
     }
-
-    .projetos_container div a img {
+    .projeto {
+        flex: 1 1 100%;
         max-width: 100%;
+        padding: 15px;
     }
 
     header {
