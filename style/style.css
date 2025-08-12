@@ -432,7 +432,7 @@ footer a:hover {
         gap: 15px;
     }
     section:not(header section) {
-    box-shadow: 0 0 3px #fe9a2075;
+    box-shadow: 0 0 5px #fe9a20a4;
   }
 }
 
