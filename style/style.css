@@ -95,15 +95,19 @@ section:not(header section) {
     0% {
         color: #FE9920;
     }
+
     30% {
         color: #FE9920;
     }
+
     50% {
         color: yellow;
     }
+
     80% {
         color: rgb(255, 17, 0);
     }
+
     100% {
         color: #FE9920
     }
@@ -130,6 +134,7 @@ section:not(header section) {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -191,9 +196,11 @@ section:not(header section) {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
@@ -246,7 +253,8 @@ section:not(header section) {
     text-align: center;
     padding: 0 40px;
 }
-.projetos_title{
+
+.projetos_title {
     margin: 2%;
 }
 
@@ -315,15 +323,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
-    gap: 10px; 
+    flex-wrap: wrap;
+    gap: 10px;
     font-size: 10px;
 }
+
 footer a {
     text-decoration: none;
     color: #FE9920;
     transition: 1s;
 }
+
 footer a:hover {
     color: #EBF5DF;
 }
@@ -354,11 +364,14 @@ footer a:hover {
         gap: 15px;
         flex-wrap: wrap;
     }
+
     .projeto {
         flex: 1 1 45%;
         max-width: none;
     }
-
+    .contato_lista{
+        flex-wrap: wrap;
+    }
     header {
         flex-wrap: wrap;
         padding: 20px 4%;
@@ -389,11 +402,18 @@ footer a:hover {
         margin: 10px 0;
     }
 
+    .sobremim_container article {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
     .projetos_lista {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
     }
+
     .projeto {
         flex: 1 1 100%;
         max-width: 100%;
@@ -431,16 +451,17 @@ footer a:hover {
         flex-direction: column;
         gap: 15px;
     }
+
     section:not(header section) {
-    margin-left: 10px;
-    margin-right: 10px;
-    box-shadow: 0 0 5px rgba(254, 153, 32, 1);
-  }
+        margin-left: 10px;
+        margin-right: 10px;
+        box-shadow: 0 0 5px rgba(254, 153, 32, 1);
+    }
 }
 
 body,
 section:not(header section) {
     max-width: 100vw;
     overflow-x: hidden;
-    
+
 }
