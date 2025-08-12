@@ -434,6 +434,7 @@ footer a:hover {
     section:not(header section) {
     margin-left: 10px;
     margin-right: 10px;
+    box-shadow: 0 0 5px #FE9920;
   }
 }
 
