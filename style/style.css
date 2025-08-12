@@ -431,10 +431,15 @@ footer a:hover {
         flex-direction: column;
         gap: 15px;
     }
+      section:not(header section) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 body,
 section:not(header section) {
     max-width: 100vw;
     overflow-x: hidden;
+    
 }
